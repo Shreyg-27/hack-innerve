@@ -1,24 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 
-body {
+.bodyNavbar {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   font-family: 'Raleway', Arial, sans-serif;
 }
 
-ul {
+.ulNavbar {
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-li {
+.liNavbar {
   list-style: none;
 }
 
-a {
+.aNavbar {
   position: relative;
   display: block;
   margin: 0 10px;
@@ -31,7 +31,7 @@ a {
   overflow: hidden;
 }
 
-a:before {
+.aNavbar:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -43,7 +43,7 @@ a:before {
   transition: 0.5s;
 }
 
-a:hover:before {
+.aNavbar:hover:before {
   animation: line 0.5s linear forwards;
 }
 
@@ -63,6 +63,6 @@ a:hover:before {
   }
 }
 
-a:hover {
+.aNavbar:hover {
   color: white;
 }
