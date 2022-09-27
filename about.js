@@ -6,11 +6,11 @@ var rot = 0,
 btns.forEach(function(btn) {
   btn.addEventListener('click', function(){
     if(btn.className == 'btn_left') {
-      rot = rot - 90
+      rot = rot - 72
       con.style.transform = 'rotate('+rot+'deg)'
     }
     if(btn.className == 'btn_right') {
-      rot = rot + 90
+      rot = rot + 72
       con.style.transform = 'rotate('+rot+'deg)'
     }
   })
@@ -18,11 +18,11 @@ btns.forEach(function(btn) {
 
 window.addEventListener('keyup', function(e){
   if(e.keyCode === 37) {
-    rot = rot - 90
+    rot = rot - 72
     con.style.transform = 'rotate('+rot+'deg)'
   }
   if(e.keyCode === 39) {
-    rot = rot + 90
+    rot = rot + 72
     con.style.transform = 'rotate('+rot+'deg)'
   }
 })
@@ -35,10 +35,10 @@ function mouseWheel(e) {
   }, tran_time)
 
   if(e.deltaY < 0) {    
-    rot = rot - 90
+    rot = rot - 72
     con.style.transform = 'rotate('+rot+'deg)'
   } else {
-    rot = rot + 90
+    rot = rot + 72
     con.style.transform = 'rotate('+rot+'deg)'
   }
 }

@@ -2,7 +2,7 @@
   --transition: 1s;
 }
 html {
-  background: #222;
+  background: white;
   color: white;
   font-family: system-ui;
   overflow: hidden;
@@ -36,13 +36,16 @@ html {
   transform: rotate(0deg);
 }
 .caro_slide:nth-child(2) {
-  transform: rotate(90deg);
+  transform: rotate(72deg);
 }
 .caro_slide:nth-child(3) {
-  transform: rotate(180deg);
+  transform: rotate(144deg);
 }
 .caro_slide:nth-child(4) {
-  transform: rotate(270deg);
+  transform: rotate(216deg);
+}
+.caro_slide:nth-child(5) {
+  transform: rotate(288deg);
 }
 
 .caro_slide div {
@@ -59,16 +62,19 @@ html {
 }
 
 .caro_slide:nth-child(1) div {
-  background-color: #e198de;
+  background-color: #e14026;
 }
 .caro_slide:nth-child(2) div {
-  background-color: #acffbb;
+  background-color: #202e41;
 }
 .caro_slide:nth-child(3) div {
-  background-color: #6cacf1;
+  background-color: #1ca5a2;
 }
 .caro_slide:nth-child(4) div {
-  background-color: #2ea8c7;
+  background-color: #9ecb3b;
+}
+.caro_slide:nth-child(5) div {
+  background-color: #ea8324;
 }
 
 .caro_slide p {

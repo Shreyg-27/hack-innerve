@@ -1,6 +1,7 @@
 div#carousel { 
   perspective: 1200px; 
-  background: white; 
+  background: #e0e5ec;
+  ; 
   padding-top: 10%; 
   font-size:0; 
   margin: 3rem; 
