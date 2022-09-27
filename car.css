@@ -1,139 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap');
-
-.frame {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 400px;
-  margin-top: -200px;
-  margin-left: -200px;
-  border-radius: 2px;
-  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  background: #7DB1C7;
-  color: #333;
-font-family: 'Ibarra Real Nova', serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: perspective(60px);
-  transform-style: preserve-3d;
+div#carousel { 
+  perspective: 1200px; 
+  background: white; 
+  padding-top: 10%; 
+  font-size:0; 
+  margin: 3rem; 
+  overflow: hidden; 
 }
-
-.center {
-  position: absolute;
-  height: 200px;
-  width: 400px;
-  top: 0px;
-  left: 0;
-  transform: perspective(60px);
-  transform-style: preserve-3d;
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 300px; 
+  transform-origin: 50% 50% -500px; 
+  transition: 1s; 
+} 
+figure#spinner img { 
+  width: 40%; max-width: 425px; 
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
 }
-
-.card-1 {
-  position: absolute;
-  top: 90px;
-  left: 90px;
-  width: 200px;
-  height: 200px;
-  border-radius: 5px;
-  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.5);
-  animation: card1-animation 5s ease-in-out infinite both;
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
 }
-
-.card-2 {
-  position: absolute;
-  top: 90px;
-  left: 90px;
-  width: 200px;
-  height: 200px;
-  border-radius: 5px;
-  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.5);
-  animation: card2-animation 5s ease-in-out infinite both;
-}
-
-.card-3 {
-  position: absolute;
-  top: 90px;
-  left: 90px;
-  width: 200px;
-  height: 200px;
-  border-radius: 5px;
-  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.5);
-  animation: card3-animation 5s ease-in-out infinite both;
-}
-
-.header {
-  position: absolute;
-  width: 200px;
-  height: 40px;
-  border-radius: 5px 5px 0 0;
-  background: #C7A57D;
-  color: #fff;
-  font-size: 24px;
-  line-height: 1.7;
-  text-align: center;
-  font-weight: 600;
-}
-
-.content {
-  position: absolute;
-  top: 40px;
-  width: 200px;
-  height: 160px;
-  background: #fff;
-  color: #000;
-}
-
-.content p {
-  font-size: 14px;
-  margin: 10px;
-}
-
-@keyframes card1-animation {
-
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  33.33% {
-    transform: translate3d(145px, 0, -45px);
-  }
-
-  66.66% {
-    transform: translate3d(-145px, 0, -45px);
-  }
-}
-
-@keyframes card2-animation {
-
-  0%,
-  100% {
-    transform: translate3d(145px, 0, -45px);
-  }
-
-  33.33% {
-    transform: translate3d(-145px, 0, -45px);
-  }
-
-  66.66% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes card3-animation {
-
-  0%,
-  100% {
-    transform: translate3d(-145px, 0, -45px);
-  }
-
-  33.33% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  66.66% {
-    transform: translate3d(145px, 0, -45px);
-  }
-}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span { 
+  color: black; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  position: relative; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }

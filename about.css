@@ -59,13 +59,13 @@ html {
 }
 
 .caro_slide:nth-child(1) div {
-  background-color: #f04d43;
+  background-color: #e198de;
 }
 .caro_slide:nth-child(2) div {
-  background-color: #f68235;
+  background-color: #acffbb;
 }
 .caro_slide:nth-child(3) div {
-  background-color: #faaf18;
+  background-color: #6cacf1;
 }
 .caro_slide:nth-child(4) div {
   background-color: #2ea8c7;
