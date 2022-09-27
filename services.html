@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Make A Request</title>
+        <!-- <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0"> -->
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="services.css">
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <form action="index.html" method="post">
+        <h1>Make A Request</h1>
+        
+        <fieldset>
+          
+          <legend>The Waste:</legend>
+        
+          <label for="wasteType">Please Choose Type of Waste</label>
+          <select id="wasteType" name="type_waste">
+<!--             <optgroup label="Web"> -->
+             <option value="dry">Dry</option>
+            <option value="e-waste">e-waste</option>
+            <option value="hazardous">Hazardous</option>
+             <option value="plastic">Plastic</option>
+            <option value="sanitary">Sanitary</option> 
+           <option value="wet">Wet</option>
+<!--             </optgroup>
+            <optgroup label="Mobile"> -->
+<!--               <option value="android_developer">Android Developer</option>
+              <option value="ios_developer">IOS Developer</option>
+              <option value="mobile_designer">Mobile Designer</option>
+            </optgroup>
+            <optgroup label="Business">
+              <option value="business_owner">Business Owner</option>
+              <option value="freelancer">Freelancer</option> -->
+<!--             </optgroup> -->
+          </select>
+          <label for="wastePicture"> OR Upload a Picture Of Waste</label>
+          <input type="file" id="wastePicture" name="waste-picture">
+          <label for="wasteAmount">Amount Of Waste(in KG)</label>
+  <input id="wasteAmount" type="number" name="amount-of-waste" step=".01">
+          <label for="dateOfPickUp">Please Choose Date Of PickUp:</label>
+<input type="date" id="dateOfPickUp" name="pickup-date">
+          <label for="pickupTime">Time Of PickUp:</label>
+      <input type="time" id="pickupTime">
+      <label for="findMe">Please Select Location:</label>
+          <button id="findMe">Select Location</button><br />
+<p id="status"></p>
+<a id="map-link" target="_blank"></a>
+        
+       
+<!--           <label for="password">Password:</label>
+          <input type="password" id="password"       name="user_password">
+        
+          <label>Age:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">Over 13</label> -->
+          
+<!--         </fieldset> -->
+<!--         <fieldset>  
+        
+          <legend><span class="number">2</span> Your Profile</legend>
+          
+         <label for="bio">Bio:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+         -->
+       
+        
+         
+<!--           <label>Interests:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label> -->
+          <label for="specialRequest">Anything you'd like our Garbage Collector to know</label>
+
+<textarea id="specialRequest" name="special-request" rows="4" cols="50">
+</textarea>
+         </fieldset>
+       
+        <button type="submit">Request</button>
+        
+       </form>
+        </div>
+      </div>
+      
+    </body>
+</html>
