@@ -3,6 +3,9 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
+  html {
+    background: #e0e5ec;
+  }
   
   body {
     font-family: 'Nunito', sans-serif;
@@ -13,7 +16,7 @@
     max-width: 300px;
     margin: 10px auto;
     padding: 10px 20px;
-    background: #f4f7f8;
+    background: #C7D6EB;
     border-radius: 8px;
   }
   
@@ -42,7 +45,7 @@
     outline: 0;
     padding: 15px;
     width: 100%;
-    background-color: #e8eeef;
+    background-color: #e0e5ec;
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
@@ -62,13 +65,13 @@
   button {
     padding: 19px 39px 18px 39px;
     color: #FFF;
-    background-color: #01547B;
+    background-color: #3473CC;
     font-size: 18px;
     text-align: center;
     font-style: normal;
     border-radius: 5px;
     width: 100%;
-    border: 1px solid #01547B;
+    border: 1px solid #3473CC;
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     margin-bottom: 10px;
@@ -114,4 +117,7 @@
       max-width: 480px;
     }
   
+  }
+  * {
+    font-family: 'Raleway', Arial, sans-serif;
   }
