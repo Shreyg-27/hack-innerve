@@ -8,7 +8,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  background-color: #001253;
+  background-color: #e0e5ec;
   overflow-x: hidden;
 }
 
@@ -45,7 +45,7 @@ body {
   height: 1100px;
   width: 1100px;
   transform: translate(50%, -50%);
-  background-image: radial-gradient(#81ADEB 15%, #001253 60%);
+  background-image: radial-gradient(#8ea3f0 15%, #e0e5ec 60%);
 }
 
 .supaview,
@@ -55,7 +55,7 @@ body {
 }
 
 .supaview {
-  background-color: #020A29;
+  background-color: #b1bef2;
 }
 .supaview__stars {
   margin-bottom: 15px;
