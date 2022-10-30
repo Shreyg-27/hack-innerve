@@ -3,7 +3,7 @@
 ![Screenshot (200)](https://user-images.githubusercontent.com/98201597/198877229-b0683702-f331-468d-8db3-f3b1230c16b1.png)
 
 ## home page
-![Screenshot (168)](https://user-images.githubusercontent.com/98201597/198877224-b5c36913-96d5-4724-bbde-feabf7774edb.png)
+![Screenshot (199)](https://user-images.githubusercontent.com/98201597/198877480-8202ff60-89f2-4f53-ad66-8e0eb3d2090a.png)
 
 ## the request form
 We have created a form for the user where they have the option to choose the type of waste from the given option, if they are unsure of the type of waste they can simply upload a picture and our ml model will predict the type of waste. Further the user can specify the amount of waste, time and date of pickup and choose a location of pick up directly from the given map in the form which allows user to select a location and does all things a typical Google map does, further by clicking on the 'make a request' button they can submit their requests
